@@ -1,0 +1,31 @@
+{
+  "name": "smrt-twitter-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravernkoh/smrt-twitter-stream.git"
+  },
+  "keywords": [
+    "SMRT",
+    "MRT",
+    "Twitter",
+    "breakdown"
+  ],
+  "author": "Ravern Koh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravernkoh/smrt-twitter-stream/issues"
+  },
+  "homepage": "https://github.com/ravernkoh/smrt-twitter-stream#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
