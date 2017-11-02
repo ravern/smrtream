@@ -10,7 +10,7 @@ var twitter = new Twitter({
   access_token_secret: secrets.access_token_secret,
 });
 
-const stream = twitter.stream('statuses/filter', {track: 'MRT, SMRT, LTA'});
+const stream = twitter.stream('statuses/filter', {track: 'MRT, SMRT, LRT, Delay'});
 const output = fs.createWriteStream('output.txt', {flags: 'a'});
 
 stream.on('data', function(event) {
@@ -24,6 +24,8 @@ stream.on('data', function(event) {
     output.write(json);
     output.write("\n");
     console.log('Tweet received!');
+    delete event.user;
+    console.log(event.text);
   }
 });
 
